@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+
+{% block page_content %}
+    <div class="card">
+        <h1>Title: {{ book.title }} | Genre: {{ book.genre }}</h1>
+        <p>Author: {{ book.author }}</p>
+        <p>Code: <strong>{{ book.code }}</strong></p>
+        <p>Pages: <strong>{{ book.pages }}</strong></p>
+    </div>
+{% endblock %}

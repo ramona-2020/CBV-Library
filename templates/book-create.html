@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+{% block page_content %}
+    <h1>Create Book</h1>
+
+    <form method="post" action="{% url 'book create page'%}" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ form.as_div }}
+
+        <button type="submit" name="submit"  class="btn btn-primary">Create</button>
+    </form>
+
+{% endblock %}
